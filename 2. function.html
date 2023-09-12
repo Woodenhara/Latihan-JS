@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Function</title>
 </head>
+
 <body>
     <h1>Berlatih Fungsi</h1>
 
@@ -30,7 +32,6 @@
     </div>
 
     <script>
-
         // CONTOH
         // Kamu diminta untuk membuat fungsi bernama tampilkan() untuk menampilkan "Aku Tampil" pada halaman html. 
 
@@ -48,13 +49,13 @@
 halaman html. Tampilkan dengan cara document.getElementById("jawaban1").innerHTML seperti di CONTOH.
         */
 
-        
+
         function teriak() {
             // Tulis Code mulai di sini
             document.getElementById("jawaban1").innerHTML = "Halo Function!"
             // Tampilkan dengan cara document.getElementById("jawaban1").innerHTML seperti di CONTOH.
         }
-        
+
         // Jalankan function teriak
         teriak()
 
@@ -66,7 +67,7 @@ halaman html. Tampilkan dengan cara document.getElementById("jawaban1").innerHTM
             Tampilkan jawaban dengan cara document.getElementById("jawaban2").innerHTML seperti di CONTOH
         */
 
-        
+
         function kalikan(num1, num2) {
             // Code kamu mulai dari sini
             var hasil = num1 * num2;
@@ -95,15 +96,16 @@ halaman html. Tampilkan dengan cara document.getElementById("jawaban1").innerHTM
             "Nama saya Agus, umur saya 30 tahun, alamat saya di Jln. Malioboro, Yogjakarta, dan saya punya hobby yaitu gaming!"
             Tampilkan dengan cara document.getElementById("jawaban3").innerHTML seperti di CONTOH
         */
-    
-        function buatKalimat(name, age, aaddress, hobby) {
+
+        function buatKalimat(nama, umur, alamat, hobi) {
             // Code kamu mulai dari sini
-            var kalimatBaru = `Nama saya ${name}, umur saya ${age}, alamat saya di ${address}, dan saya punya hobi yaitu ${hobby}!`;
+            var kalimatBaru =
+                `Nama saya ${nama}, umur saya ${umur}, alamat saya di ${alamat}, dan saya punya hobi yaitu ${hobi}!`;
 
             // Tampilkan dengan cara document.getElementById("jawaban3").innerHTML seperti di CONTOH.
             document.getElementById("jawaban3").innerHTML = kalimatBaru
         }
-        
+
 
 
         // Jalankan function buatKalimat

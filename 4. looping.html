@@ -59,21 +59,21 @@
         // Code kamu di sini, lakukan looping dengan while
 
         jawaban1 += "LOOPING PERTAMA<br>";
+        var losa = 2
 
-        for (var losa = 2; losa <= 20; losa++) {
-            if (losa % 2 === 0) {
-                jawaban1 += (`${losa} - I love coding<br>`);
-            }
+        while (losa <= 20) { 
+            jawaban1 += (`${losa} - I love coding<br>`);
+            losa += 2
         }
 
         jawaban1 += "<br>";
 
         jawaban1 += "LOOPING KEDUA<br>";
+        var lodu = 20
 
-        for (var lodu = 20; lodu >= 2; lodu--) {
-            if (lodu % 2 === 0) {
-                jawaban1 += (`${lodu} - I will become a mobile developer<br>`);
-            }
+        while (lodu >= 2) {
+            jawaban1 += (`${lodu} - I will become a mobile developer<br>`);
+            lodu -= 2
         }
 
         // Driver Code, Jangan diganggu !

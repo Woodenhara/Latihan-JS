@@ -60,17 +60,20 @@
         var name = document.getElementById("name").value
         var role = document.getElementById("role").value
         // buatlah kondisional berdasarkan dua variabel di atas yaitu name dan role, ketentuannya dapat dibaca di atas
-        if (name == " " && role == " ") {
-            jawabanKonsol = ("Nama harus diisi!");
-        } else if (name != " " && role == " ") {
+        if (name == "" & role == "") {
+            jawabanKonsol = ("Nama dan Peran harus diisi!");
+        } else if (name != "" & role == "") {
             jawabanKonsol = (`Halo ${name}, pilih peranmu untuk memulai game!`)
-        } else if (name != " " && role === "Penyihir") {
+            jawabanKonsol = ("Nama harus diisi!");
+        } else if (name == "" & role != "") {
+            jawabanKonsol = (`Isi namamu terlebih dahulu sebelum mengisi peran untuk memulai game!`)
+        } else if (name != "" & role === "Penyihir") {
             jawabanKonsol = (`Selamat datang di Dunia Werewolf, ${name}. `)
             jawabanKonsol += (`Halo Penyihir ${name}, kamu dapat melihat siapa yang menjadi Werewolf!`)
-        } else if (name != " " && role === "Werewolf") {
+        } else if (name != "" & role === "Werewolf") {
             jawabanKonsol = (`Selamat datang di Dunia Werewolf, ${name}. `)
             jawabanKonsol += (`Halo Werewolf ${name}, kamu dapat memilih siapa yang akan kamu makan malam ini!`)
-        } else if (name != " " && role === "Rakjel") {
+        } else if (name != "" & role === "Rakjel") {
             jawabanKonsol = (`Selamat datang di Dunia Werewolf, ${name}. `)
             jawabanKonsol += (`Halo Rakjel ${name}, Kamu menjadi rakyat jelata!`)
         } else {
